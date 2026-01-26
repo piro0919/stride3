@@ -1,0 +1,28 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: "src/**/*.{ts,tsx}"
+      run: npx eslint --fix {staged_files}
+      stage_fixed: true
+    prettier:
+      glob: "**/*.{ts,tsx,js,jsx,json,css,md,yml,yaml}"
+      exclude: "**/*.d.ts"
+      run: npx prettier --write {staged_files}
+      stage_fixed: true
+    secretlint:
+      glob: "**/*"
+      run: |
+        for file in {staged_files}; do
+          if [ -f "$file" ]; then
+            cat "$file" | npx secretlint --maskSecrets --stdinFileName="$file" || exit 1
+          fi
+        done
+    typescript:
+      glob: "src/**/*.{ts,tsx}"
+      run: npx tsc --noEmit
+
+commit-msg:
+  commands:
+    commitlint:
+      run: npx commitlint --edit {1}

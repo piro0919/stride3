@@ -1,0 +1,165 @@
+{
+  "Metadata": {
+    "title": "Stride3",
+    "description": "Stride3 Application"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "Navigation": {
+    "home": "Home",
+    "settings": "Settings"
+  },
+  "HomePage": {
+    "title": "Welcome to Stride3",
+    "description": "Get started by editing the page.tsx file.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "Settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageDescription": "Select display language",
+    "theme": "Theme",
+    "themeDescription": "Select theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System"
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "description": "Sorry, an error occurred.",
+    "backHome": "Back to Home"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  },
+  "Teams": {
+    "title": "Teams",
+    "createTeam": "Create Team",
+    "createFirstTeam": "Create your first team",
+    "noTeams": "You are not a member of any team",
+    "backToTeams": "Back to teams",
+    "teamNotFound": "Team Not Found",
+    "teamNotFoundDescription": "This team does not exist or you do not have access.",
+    "teamName": "Team Name",
+    "teamNamePlaceholder": "e.g. Development Team",
+    "teamSlug": "Team URL",
+    "slugDescription": "Used in the URL. Only lowercase letters, numbers, and hyphens are allowed.",
+    "teamDescription": "Description",
+    "teamDescriptionPlaceholder": "Enter a description for the team",
+    "optional": "optional",
+    "allTeams": "All Teams",
+    "dashboard": "Dashboard",
+    "members": "Members",
+    "settings": "Settings",
+    "memberCount": "Members",
+    "activeSprints": "Active Sprints",
+    "backlogItems": "Backlog Items",
+    "recentActivity": "Recent Activity",
+    "noActivity": "No activity yet",
+    "roles": {
+      "owner": "Owner",
+      "scrum_master": "Scrum Master",
+      "developer": "Developer"
+    },
+    "invitations": "Invitations",
+    "invitationsDescription": "Manage team invitations",
+    "teamSettings": "Team Settings",
+    "teamSettingsDescription": "Manage team configuration",
+    "inviteMember": "Invite Member",
+    "emailPlaceholder": "example@email.com",
+    "selectRole": "Select role",
+    "inviteUrl": "Invite URL",
+    "copyUrl": "Copy URL",
+    "copied": "Copied!",
+    "revokeInvite": "Revoke Invite",
+    "noInvitations": "No active invitations",
+    "pending": "Pending",
+    "expiresAt": "Expires",
+    "backToSettings": "Back to Settings",
+    "invitationCreated": "Invitation created",
+    "inviteAnother": "Invite another member",
+    "emailAddress": "Email Address",
+    "role": "Role",
+    "createInvitation": "Create Invitation",
+    "inviteErrors": {
+      "VALIDATION_ERROR": "Please check your input",
+      "INVITATION_FAILED": "Failed to create invitation",
+      "NOT_AUTHORIZED": "You are not authorized to perform this action"
+    },
+    "errors": {
+      "VALIDATION_ERROR": "Please check your input",
+      "SLUG_ALREADY_EXISTS": "This URL is already taken",
+      "INVALID_SLUG_FORMAT": "Only lowercase letters, numbers, and hyphens are allowed",
+      "INVITATION_FAILED": "Failed to create invitation",
+      "NOT_AUTHORIZED": "You are not authorized to perform this action"
+    }
+  },
+  "Auth": {
+    "signIn": "Sign In",
+    "signInDescription": "Sign in to your account",
+    "signUp": "Sign Up",
+    "signUpDescription": "Create a new account",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "displayName": "Display Name",
+    "displayNamePlaceholder": "John Doe",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "checkEmail": "Check your email",
+    "checkEmailDescription": "We've sent you a confirmation email. Click the link in the email to complete your registration.",
+    "backToSignIn": "Back to Sign In",
+    "errors": {
+      "VALIDATION_ERROR": "Please check your input",
+      "EMAIL_ALREADY_EXISTS": "This email is already registered",
+      "INVALID_CREDENTIALS": "Invalid email or password"
+    }
+  },
+  "Invite": {
+    "title": "Team Invitation",
+    "notFound": "Invitation Not Found",
+    "notFoundDescription": "This invitation does not exist or has already been used.",
+    "goToSignIn": "Go to Sign In",
+    "expired": "Invitation Expired",
+    "expiredDescription": "This invitation has expired. Please ask your team admin for a new invitation.",
+    "alreadyUsed": "Invitation Already Used",
+    "alreadyUsedDescription": "This invitation has already been used.",
+    "goToTeams": "Go to Teams",
+    "signInRequired": "Please sign in to accept this invitation.",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "wrongAccount": "Email Mismatch",
+    "wrongAccountDescription": "This invitation was sent to {email}. Please sign in with the correct account.",
+    "signInWithCorrectAccount": "Sign in with different account",
+    "invitedTo": "Invitation to {team}",
+    "invitedBy": "{name} invited you",
+    "asRole": "Join as {role}",
+    "acceptInvitation": "Accept Invitation",
+    "roles": {
+      "owner": "Owner",
+      "scrum_master": "Scrum Master",
+      "developer": "Developer"
+    },
+    "errors": {
+      "INVITATION_NOT_FOUND": "Invitation not found",
+      "INVITATION_EXPIRED": "Invitation has expired",
+      "EMAIL_MISMATCH": "This invitation was sent to a different email address",
+      "ALREADY_MEMBER": "You are already a member of this team"
+    }
+  }
+}

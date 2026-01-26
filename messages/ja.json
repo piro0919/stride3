@@ -1,0 +1,165 @@
+{
+  "Metadata": {
+    "title": "Stride3",
+    "description": "Stride3 アプリケーション"
+  },
+  "Common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "retry": "もう一度試す",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "confirm": "確認",
+    "back": "戻る",
+    "next": "次へ",
+    "submit": "送信"
+  },
+  "Navigation": {
+    "home": "ホーム",
+    "settings": "設定"
+  },
+  "HomePage": {
+    "title": "Stride3へようこそ",
+    "description": "開発を始めるには、page.tsx ファイルを編集してください。",
+    "getStarted": "始める",
+    "learnMore": "もっと詳しく"
+  },
+  "Settings": {
+    "title": "設定",
+    "language": "言語",
+    "languageDescription": "表示言語を選択",
+    "theme": "テーマ",
+    "themeDescription": "テーマを選択",
+    "themeLight": "ライト",
+    "themeDark": "ダーク",
+    "themeSystem": "システム"
+  },
+  "Error": {
+    "title": "エラーが発生しました",
+    "description": "申し訳ありませんが、問題が発生しました。",
+    "backHome": "ホームに戻る"
+  },
+  "NotFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しないか、移動した可能性があります。",
+    "backHome": "ホームに戻る"
+  },
+  "Teams": {
+    "title": "チーム",
+    "createTeam": "チームを作成",
+    "createFirstTeam": "最初のチームを作成",
+    "noTeams": "所属しているチームがありません",
+    "backToTeams": "チーム一覧に戻る",
+    "teamNotFound": "チームが見つかりません",
+    "teamNotFoundDescription": "このチームは存在しないか、アクセス権限がありません。",
+    "teamName": "チーム名",
+    "teamNamePlaceholder": "例: 開発チーム",
+    "teamSlug": "チームURL",
+    "slugDescription": "URLに使用される識別子です。小文字英数字とハイフンのみ使用可能です。",
+    "teamDescription": "説明",
+    "teamDescriptionPlaceholder": "チームの説明を入力",
+    "optional": "任意",
+    "allTeams": "すべてのチーム",
+    "dashboard": "ダッシュボード",
+    "members": "メンバー",
+    "settings": "設定",
+    "memberCount": "メンバー数",
+    "activeSprints": "アクティブスプリント",
+    "backlogItems": "バックログ",
+    "recentActivity": "最近のアクティビティ",
+    "noActivity": "まだアクティビティがありません",
+    "roles": {
+      "owner": "オーナー",
+      "scrum_master": "スクラムマスター",
+      "developer": "開発者"
+    },
+    "invitations": "招待管理",
+    "invitationsDescription": "チームへの招待を管理します",
+    "teamSettings": "チーム設定",
+    "teamSettingsDescription": "チームの基本設定を変更します",
+    "inviteMember": "メンバーを招待",
+    "emailPlaceholder": "example@email.com",
+    "selectRole": "ロールを選択",
+    "inviteUrl": "招待URL",
+    "copyUrl": "URLをコピー",
+    "copied": "コピーしました！",
+    "revokeInvite": "招待を取り消す",
+    "noInvitations": "有効な招待がありません",
+    "pending": "保留中",
+    "expiresAt": "有効期限",
+    "backToSettings": "設定に戻る",
+    "invitationCreated": "招待を作成しました",
+    "inviteAnother": "別のメンバーを招待",
+    "emailAddress": "メールアドレス",
+    "role": "ロール",
+    "createInvitation": "招待を作成",
+    "inviteErrors": {
+      "VALIDATION_ERROR": "入力内容を確認してください",
+      "INVITATION_FAILED": "招待の作成に失敗しました",
+      "NOT_AUTHORIZED": "この操作を行う権限がありません"
+    },
+    "errors": {
+      "VALIDATION_ERROR": "入力内容を確認してください",
+      "SLUG_ALREADY_EXISTS": "このURLは既に使用されています",
+      "INVALID_SLUG_FORMAT": "小文字英数字とハイフンのみ使用可能です",
+      "INVITATION_FAILED": "招待の作成に失敗しました",
+      "NOT_AUTHORIZED": "この操作を行う権限がありません"
+    }
+  },
+  "Auth": {
+    "signIn": "サインイン",
+    "signInDescription": "アカウントにサインインしてください",
+    "signUp": "サインアップ",
+    "signUpDescription": "新しいアカウントを作成してください",
+    "signOut": "サインアウト",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "displayName": "表示名",
+    "displayNamePlaceholder": "山田 太郎",
+    "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+    "dontHaveAccount": "アカウントをお持ちでないですか？",
+    "checkEmail": "メールを確認してください",
+    "checkEmailDescription": "確認メールを送信しました。メール内のリンクをクリックして登録を完了してください。",
+    "backToSignIn": "サインインに戻る",
+    "errors": {
+      "VALIDATION_ERROR": "入力内容を確認してください",
+      "EMAIL_ALREADY_EXISTS": "このメールアドレスは既に登録されています",
+      "INVALID_CREDENTIALS": "メールアドレスまたはパスワードが正しくありません"
+    }
+  },
+  "Invite": {
+    "title": "チームへの招待",
+    "notFound": "招待が見つかりません",
+    "notFoundDescription": "この招待は存在しないか、既に使用されています。",
+    "goToSignIn": "サインインへ",
+    "expired": "招待の有効期限切れ",
+    "expiredDescription": "この招待の有効期限が切れています。チームの管理者に新しい招待を依頼してください。",
+    "alreadyUsed": "招待は使用済み",
+    "alreadyUsedDescription": "この招待は既に使用されています。",
+    "goToTeams": "チーム一覧へ",
+    "signInRequired": "招待を受け入れるにはサインインが必要です。",
+    "signIn": "サインイン",
+    "signUp": "サインアップ",
+    "wrongAccount": "メールアドレスが一致しません",
+    "wrongAccountDescription": "この招待は {email} 宛てに送信されています。正しいアカウントでサインインしてください。",
+    "signInWithCorrectAccount": "別のアカウントでサインイン",
+    "invitedTo": "{team} への招待",
+    "invitedBy": "{name} があなたを招待しました",
+    "asRole": "{role}として参加",
+    "acceptInvitation": "招待を受け入れる",
+    "roles": {
+      "owner": "オーナー",
+      "scrum_master": "スクラムマスター",
+      "developer": "開発者"
+    },
+    "errors": {
+      "INVITATION_NOT_FOUND": "招待が見つかりません",
+      "INVITATION_EXPIRED": "招待の有効期限が切れています",
+      "EMAIL_MISMATCH": "この招待は別のメールアドレス宛てです",
+      "ALREADY_MEMBER": "既にこのチームのメンバーです"
+    }
+  }
+}
