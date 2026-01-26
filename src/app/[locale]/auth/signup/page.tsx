@@ -67,7 +67,7 @@ export default function SignUpPage(): ReactNode {
             <Input
               autoComplete="new-password"
               id="password"
-              minLength={6}
+              minLength={8}
               name="password"
               placeholder="••••••••"
               required={true}
