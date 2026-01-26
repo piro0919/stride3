@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Stride3",
-    "description": "Stride3 アプリケーション"
+    "title": "Stride",
+    "description": "スクラム開発をシンプルにするプロジェクト管理ツール"
   },
   "Common": {
     "loading": "読み込み中...",
@@ -22,10 +22,25 @@
     "settings": "設定"
   },
   "HomePage": {
-    "title": "Stride3へようこそ",
-    "description": "開発を始めるには、page.tsx ファイルを編集してください。",
-    "getStarted": "始める",
-    "learnMore": "もっと詳しく"
+    "heroTitle": "スクラム開発を、もっとシンプルに",
+    "heroDescription": "Strideは、チームのスプリント管理を効率化するプロジェクト管理ツールです。招待制のチームで安全にコラボレーション。",
+    "getStarted": "無料で始める",
+    "signIn": "サインイン",
+    "features": {
+      "title": "Strideの特徴",
+      "team": {
+        "title": "チーム管理",
+        "description": "招待制でメンバーを追加。オーナー、スクラムマスター、開発者のロールで権限を管理。"
+      },
+      "sprint": {
+        "title": "スプリント管理",
+        "description": "バックログからスプリントへ。タスクの進捗を可視化してチームの生産性を向上。"
+      },
+      "secure": {
+        "title": "セキュア",
+        "description": "RLSによるデータ分離。チームのデータは完全に保護されます。"
+      }
+    }
   },
   "Settings": {
     "title": "設定",
@@ -124,10 +139,26 @@
     "checkEmail": "メールを確認してください",
     "checkEmailDescription": "確認メールを送信しました。メール内のリンクをクリックして登録を完了してください。",
     "backToSignIn": "サインインに戻る",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "forgotPasswordDescription": "登録したメールアドレスを入力してください。パスワードリセット用のリンクをお送りします。",
+    "sendResetLink": "リセットリンクを送信",
+    "resetPasswordEmailSent": "メールを送信しました",
+    "resetPasswordEmailSentDescription": "パスワードリセット用のリンクを送信しました。メールをご確認ください。",
+    "updatePassword": "パスワードを更新",
+    "updatePasswordDescription": "新しいパスワードを設定してください",
+    "newPassword": "新しいパスワード",
+    "confirmPassword": "パスワードを確認",
+    "passwordUpdated": "パスワードを更新しました",
+    "passwordUpdatedDescription": "パスワードが正常に更新されました。新しいパスワードでサインインしてください。",
     "errors": {
       "VALIDATION_ERROR": "入力内容を確認してください",
       "EMAIL_ALREADY_EXISTS": "このメールアドレスは既に登録されています",
-      "INVALID_CREDENTIALS": "メールアドレスまたはパスワードが正しくありません"
+      "INVALID_CREDENTIALS": "メールアドレスまたはパスワードが正しくありません",
+      "TOO_MANY_ATTEMPTS": "試行回数が多すぎます。しばらくしてからもう一度お試しください",
+      "SIGNUP_ERROR": "アカウントの作成に失敗しました",
+      "PASSWORD_MISMATCH": "パスワードが一致しません",
+      "PASSWORD_TOO_SHORT": "パスワードは8文字以上で入力してください",
+      "UPDATE_PASSWORD_ERROR": "パスワードの更新に失敗しました"
     }
   },
   "Invite": {

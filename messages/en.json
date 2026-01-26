@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Stride3",
-    "description": "Stride3 Application"
+    "title": "Stride",
+    "description": "A project management tool that simplifies Scrum development"
   },
   "Common": {
     "loading": "Loading...",
@@ -22,10 +22,25 @@
     "settings": "Settings"
   },
   "HomePage": {
-    "title": "Welcome to Stride3",
-    "description": "Get started by editing the page.tsx file.",
-    "getStarted": "Get Started",
-    "learnMore": "Learn More"
+    "heroTitle": "Scrum development, simplified",
+    "heroDescription": "Stride is a project management tool that streamlines your team's sprint management. Collaborate securely with invitation-only teams.",
+    "getStarted": "Get Started Free",
+    "signIn": "Sign In",
+    "features": {
+      "title": "Why Stride",
+      "team": {
+        "title": "Team Management",
+        "description": "Add members by invitation. Manage permissions with Owner, Scrum Master, and Developer roles."
+      },
+      "sprint": {
+        "title": "Sprint Management",
+        "description": "From backlog to sprint. Visualize task progress and boost team productivity."
+      },
+      "secure": {
+        "title": "Secure",
+        "description": "Data isolation with RLS. Your team's data is fully protected."
+      }
+    }
   },
   "Settings": {
     "title": "Settings",
@@ -124,10 +139,26 @@
     "checkEmail": "Check your email",
     "checkEmailDescription": "We've sent you a confirmation email. Click the link in the email to complete your registration.",
     "backToSignIn": "Back to Sign In",
+    "forgotPassword": "Forgot your password?",
+    "forgotPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
+    "sendResetLink": "Send Reset Link",
+    "resetPasswordEmailSent": "Email sent",
+    "resetPasswordEmailSentDescription": "We've sent you a password reset link. Please check your email.",
+    "updatePassword": "Update Password",
+    "updatePasswordDescription": "Enter your new password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "passwordUpdated": "Password updated",
+    "passwordUpdatedDescription": "Your password has been updated successfully. Please sign in with your new password.",
     "errors": {
       "VALIDATION_ERROR": "Please check your input",
       "EMAIL_ALREADY_EXISTS": "This email is already registered",
-      "INVALID_CREDENTIALS": "Invalid email or password"
+      "INVALID_CREDENTIALS": "Invalid email or password",
+      "TOO_MANY_ATTEMPTS": "Too many attempts. Please try again later",
+      "SIGNUP_ERROR": "Failed to create account",
+      "PASSWORD_MISMATCH": "Passwords do not match",
+      "PASSWORD_TOO_SHORT": "Password must be at least 8 characters",
+      "UPDATE_PASSWORD_ERROR": "Failed to update password"
     }
   },
   "Invite": {
