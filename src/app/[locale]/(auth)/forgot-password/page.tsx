@@ -18,7 +18,7 @@ export default function ForgotPasswordPage(): ReactNode {
         <div className="w-full space-y-6 text-center">
           <h1 className="font-bold text-2xl">{t("checkEmail")}</h1>
           <p className="text-muted-foreground">{t("resetPasswordEmailSent")}</p>
-          <Link className="text-primary underline" href="/auth/signin">
+          <Link className="text-primary underline" href="/signin">
             {t("backToSignIn")}
           </Link>
         </div>
@@ -57,7 +57,7 @@ export default function ForgotPasswordPage(): ReactNode {
           <SubmitButton>{t("sendResetLink")}</SubmitButton>
         </form>
         <p className="text-center text-muted-foreground text-sm">
-          <Link className="text-primary underline" href="/auth/signin">
+          <Link className="text-primary underline" href="/signin">
             {t("backToSignIn")}
           </Link>
         </p>

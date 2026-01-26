@@ -41,7 +41,7 @@ export default async function InvitePage({
         <h1 className="mb-2 font-bold text-2xl">{t("notFound")}</h1>
         <p className="mb-6 text-muted-foreground">{t("notFoundDescription")}</p>
         <Button asChild={true}>
-          <Link href="/auth/signin">{t("goToSignIn")}</Link>
+          <Link href="/signin">{t("goToSignIn")}</Link>
         </Button>
       </div>
     );
@@ -67,7 +67,7 @@ export default async function InvitePage({
         <h1 className="mb-2 font-bold text-2xl">{t("expired")}</h1>
         <p className="mb-6 text-muted-foreground">{t("expiredDescription")}</p>
         <Button asChild={true}>
-          <Link href="/auth/signin">{t("goToSignIn")}</Link>
+          <Link href="/signin">{t("goToSignIn")}</Link>
         </Button>
       </div>
     );
@@ -88,12 +88,12 @@ export default async function InvitePage({
         <p className="mb-6 text-muted-foreground">{t("signInRequired")}</p>
         <div className="flex gap-4">
           <Button asChild={true} variant="outline">
-            <Link href={`/auth/signin?redirect=/invite/${token}`}>
+            <Link href={`/signin?redirect=/invite/${token}`}>
               {t("signIn")}
             </Link>
           </Button>
           <Button asChild={true}>
-            <Link href={`/auth/signup?redirect=/invite/${token}`}>
+            <Link href={`/signup?redirect=/invite/${token}`}>
               {t("signUp")}
             </Link>
           </Button>
@@ -110,7 +110,7 @@ export default async function InvitePage({
           {t("wrongAccountDescription", { email: invitation.email })}
         </p>
         <Button asChild={true}>
-          <Link href="/auth/signin">{t("signInWithCorrectAccount")}</Link>
+          <Link href="/signin">{t("signInWithCorrectAccount")}</Link>
         </Button>
       </div>
     );

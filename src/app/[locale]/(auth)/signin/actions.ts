@@ -62,5 +62,5 @@ export async function signOut(): Promise<never> {
   const supabase = await createClient();
   await supabase.auth.signOut();
   revalidatePath("/", "layout");
-  redirect("/ja/auth/signin");
+  redirect("/ja/signin");
 }

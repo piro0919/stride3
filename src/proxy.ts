@@ -9,12 +9,11 @@ import { type NextRequest, NextResponse } from "next/server";
 const intlMiddleware = createIntlMiddleware(routing);
 // 認証不要なパス
 const PUBLIC_PATHS = [
-  "/auth/signin",
-  "/auth/signup",
-  "/auth/callback",
-  "/auth/forgot-password",
-  "/auth/reset-password",
-  "/invite",
+  "/signin",
+  "/signup",
+  "/callback",
+  "/forgot-password",
+  "/update-password",
 ];
 
 function isPublicPath(pathname: string): boolean {
@@ -46,7 +45,7 @@ export default async function proxy(request: NextRequest): Promise<Response> {
 
     if (!user) {
       const locale = pathname.match(/^\/(ja|en)/)?.[1] || "ja";
-      const redirectUrl = new URL(`/${locale}/auth/signin`, request.url);
+      const redirectUrl = new URL(`/${locale}/signin`, request.url);
       redirectUrl.searchParams.set("redirect", pathname);
       return NextResponse.redirect(redirectUrl);
     }

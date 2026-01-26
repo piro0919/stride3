@@ -1,31 +1,52 @@
 "use client";
 import { SubmitButton } from "../_components/submit-button";
-import { signIn, type SignInState } from "./actions";
+import { signUp, type SignUpState } from "./actions";
 import { Input } from "@/components/ui/input";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { useSearchParams } from "next/navigation";
 import { type ReactNode, useActionState } from "react";
 
-const initialState: SignInState = {};
+const initialState: SignUpState = {};
 
-export default function SignInPage(): ReactNode {
+export default function SignUpPage(): ReactNode {
   const t = useTranslations("Auth");
-  const searchParams = useSearchParams();
-  const redirectTo = searchParams.get("redirect");
-  const [state, formAction] = useActionState(signIn, initialState);
+  const [state, formAction] = useActionState(signUp, initialState);
+
+  if (state.success) {
+    return (
+      <div className="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center p-4">
+        <div className="w-full space-y-6 text-center">
+          <h1 className="font-bold text-2xl">{t("checkEmail")}</h1>
+          <p className="text-muted-foreground">{t("checkEmailDescription")}</p>
+          <Link className="text-primary underline" href="/signin">
+            {t("backToSignIn")}
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center p-4">
       <div className="w-full space-y-6">
         <div className="space-y-2 text-center">
-          <h1 className="font-bold text-2xl">{t("signIn")}</h1>
-          <p className="text-muted-foreground">{t("signInDescription")}</p>
+          <h1 className="font-bold text-2xl">{t("signUp")}</h1>
+          <p className="text-muted-foreground">{t("signUpDescription")}</p>
         </div>
         <form action={formAction} className="space-y-4">
-          {redirectTo && (
-            <input name="redirect" type="hidden" value={redirectTo} />
-          )}
+          <div className="space-y-2">
+            <label className="font-medium text-sm" htmlFor="displayName">
+              {t("displayName")}
+            </label>
+            <Input
+              autoComplete="name"
+              id="displayName"
+              name="displayName"
+              placeholder={t("displayNamePlaceholder")}
+              required={true}
+              type="text"
+            />
+          </div>
           <div className="space-y-2">
             <label className="font-medium text-sm" htmlFor="email">
               {t("email")}
@@ -44,8 +65,9 @@ export default function SignInPage(): ReactNode {
               {t("password")}
             </label>
             <Input
-              autoComplete="current-password"
+              autoComplete="new-password"
               id="password"
+              minLength={8}
               name="password"
               placeholder="••••••••"
               required={true}
@@ -57,20 +79,12 @@ export default function SignInPage(): ReactNode {
               {t(`errors.${state.error}`)}
             </p>
           )}
-          <SubmitButton>{t("signIn")}</SubmitButton>
-          <div className="text-center">
-            <Link
-              className="text-muted-foreground text-sm hover:text-primary"
-              href="/auth/forgot-password"
-            >
-              {t("forgotPassword")}
-            </Link>
-          </div>
+          <SubmitButton>{t("signUp")}</SubmitButton>
         </form>
         <p className="text-center text-muted-foreground text-sm">
-          {t("dontHaveAccount")}{" "}
-          <Link className="text-primary underline" href="/auth/signup">
-            {t("signUp")}
+          {t("alreadyHaveAccount")}{" "}
+          <Link className="text-primary underline" href="/signin">
+            {t("signIn")}
           </Link>
         </p>
       </div>

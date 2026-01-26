@@ -20,7 +20,7 @@ export default function UpdatePasswordPage(): ReactNode {
           <p className="text-muted-foreground">
             {t("passwordUpdatedDescription")}
           </p>
-          <Link className="text-primary underline" href="/auth/signin">
+          <Link className="text-primary underline" href="/signin">
             {t("signIn")}
           </Link>
         </div>

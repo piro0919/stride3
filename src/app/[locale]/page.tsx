@@ -1,9 +1,27 @@
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { createClient } from "@/lib/supabase/server";
+import { getTranslations } from "next-intl/server";
+import { redirect } from "next/navigation";
 import type { ReactNode } from "react";
 
-export default function Home(): ReactNode {
-  const t = useTranslations("HomePage");
+type HomeProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Home({ params }: HomeProps): Promise<ReactNode> {
+  const { locale } = await params;
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  // Authenticated users go to teams
+  if (user) {
+    redirect(`/${locale}/teams`);
+  }
+
+  // Show landing page for unauthenticated users
+  const t = await getTranslations("HomePage");
 
   return (
     <div className="min-h-screen bg-linear-to-b from-zinc-50 to-white dark:from-zinc-950 dark:to-zinc-900">
@@ -13,7 +31,7 @@ export default function Home(): ReactNode {
           <span className="font-bold text-xl">Stride</span>
           <Link
             className="rounded-lg px-4 py-2 text-sm transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800"
-            href="/auth/signin"
+            href="/signin"
           >
             {t("signIn")}
           </Link>
@@ -31,13 +49,13 @@ export default function Home(): ReactNode {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               className="inline-flex h-12 items-center justify-center rounded-full bg-zinc-900 px-8 font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
-              href="/auth/signup"
+              href="/signup"
             >
               {t("getStarted")}
             </Link>
             <Link
               className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-200 px-8 font-medium transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-800"
-              href="/auth/signin"
+              href="/signin"
             >
               {t("signIn")}
             </Link>

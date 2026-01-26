@@ -2,12 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import { type NextRequest, NextResponse } from "next/server";
 
 // Allowed redirect paths to prevent open redirect attacks
-const ALLOWED_REDIRECT_PATHS = [
-  "/",
-  "/teams",
-  "/auth/update-password",
-  "/invite",
-];
+const ALLOWED_REDIRECT_PATHS = ["/", "/teams", "/update-password", "/invite"];
 
 function isValidRedirectPath(path: string): boolean {
   if (!path.startsWith("/")) {
@@ -45,7 +40,5 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     }
   }
 
-  return NextResponse.redirect(
-    `${origin}/auth/signin?error=auth_callback_error`,
-  );
+  return NextResponse.redirect(`${origin}/signin?error=auth_callback_error`);
 }
