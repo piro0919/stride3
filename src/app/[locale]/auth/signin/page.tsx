@@ -58,6 +58,14 @@ export default function SignInPage(): ReactNode {
             </p>
           )}
           <SubmitButton>{t("signIn")}</SubmitButton>
+          <div className="text-center">
+            <Link
+              className="text-muted-foreground text-sm hover:text-primary"
+              href="/auth/forgot-password"
+            >
+              {t("forgotPassword")}
+            </Link>
+          </div>
         </form>
         <p className="text-center text-muted-foreground text-sm">
           {t("dontHaveAccount")}{" "}
