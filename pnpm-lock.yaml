@@ -91,8 +91,8 @@ importers:
         specifier: 19.2.3
         version: 19.2.3(@types/react@19.2.13)
       '@types/serviceworker':
-        specifier: 0.0.183
-        version: 0.0.183
+        specifier: 0.0.184
+        version: 0.0.184
       babel-plugin-react-compiler:
         specifier: 1.0.0
         version: 1.0.0
@@ -145,8 +145,8 @@ importers:
         specifier: 11.3.1
         version: 11.3.1
       supabase:
-        specifier: 2.76.3
-        version: 2.76.3
+        specifier: 2.76.4
+        version: 2.76.4
       tailwindcss:
         specifier: 4.1.18
         version: 4.1.18
@@ -1504,8 +1504,8 @@ packages:
   '@types/react@19.2.13':
     resolution: {integrity: sha512-KkiJeU6VbYbUOp5ITMIc7kBfqlYkKA5KhEHVrGMmUUMt7NeaZg65ojdPk+FtNrBAOXNVM5QM72jnADjM+XVRAQ==}
 
-  '@types/serviceworker@0.0.183':
-    resolution: {integrity: sha512-e98n5Dt77j8eJDlalKsphYxbp+K4LPZDGeR6WIKeVQ1BScrBjsLHBZYglmnZWz3YlL78qsHNWijReWS+JNWN7w==}
+  '@types/serviceworker@0.0.184':
+    resolution: {integrity: sha512-5FlE+WLXMja0DjjibmnQ5BppJ8WfWKDpnOwXOwHsmkWDDKSdAI+Vnta1xxWeHH6Q4ZljBmV0jZI6KRJax+PlQg==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -3524,8 +3524,8 @@ packages:
       babel-plugin-macros:
         optional: true
 
-  supabase@2.76.3:
-    resolution: {integrity: sha512-xJLyTiPo0WfBwHvNeLcDhyV+A0qyo/VfzL0lijXbvPL0QCY5+aLoiSwJqLempMynMvhq4Hl9EGL00B2LYmvpmQ==}
+  supabase@2.76.4:
+    resolution: {integrity: sha512-zpiC6awtf2lqo7+oBwTQ53BJuQ8nM5nkNUxesLcS3BmLta3D/Ln3L/7Hqbj2P0FgnmdOyIJg1fmtglQH4B46LA==}
     engines: {npm: '>=8'}
     hasBin: true
 
@@ -5046,7 +5046,7 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
-  '@types/serviceworker@0.0.183': {}
+  '@types/serviceworker@0.0.184': {}
 
   '@types/trusted-types@2.0.7': {}
 
@@ -7261,7 +7261,7 @@ snapshots:
     optionalDependencies:
       '@babel/core': 7.28.6
 
-  supabase@2.76.3:
+  supabase@2.76.4:
     dependencies:
       bin-links: 6.0.0
       https-proxy-agent: 7.0.6
