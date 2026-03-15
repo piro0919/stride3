@@ -45,8 +45,8 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "20.4.4",
-    "@commitlint/config-conventional": "20.4.4",
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
     "@eslint/compat": "2.0.3",
     "@secretlint/secretlint-rule-preset-recommend": "11.3.1",
     "@tailwindcss/postcss": "4.2.1",
